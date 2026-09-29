@@ -16,6 +16,37 @@ body {
     margin: auto;
     padding: 0 25px;
 }
+/* Table for scores  */
+.grades-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    background: white;
+}
+
+.grades-table th,
+.grades-table td {
+    padding: 12px 16px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+.grades-table th {
+    background: #222;
+    color: white;
+    font-weight: bold;
+}
+
+.grades-table tr:hover {
+    background: #f5f5f5;
+}
+
+.grades-table td:nth-child(2),
+.grades-table td:nth-child(3),
+.grades-table th:nth-child(2),
+.grades-table th:nth-child(3) {
+    text-align: center;
+}
 
 
 /* Header */
