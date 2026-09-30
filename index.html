@@ -26,17 +26,7 @@
 
 <body>
 
-    <header> <div class="container"> 
-        <h1>The Trøndelag Konkurranse</h1> 
-        <p class="subtitle"> Mathematics Olympiad in the region of Trøndelag. </p> 
-        <nav> 
-            <a href="index.html">Home</a> 
-            <a href="problems.html">Problems</a> 
-            <a href="results.html">Results</a> 
-            <a href="#resources">Resources</a> 
-        </nav>
-     </div> 
-    </header>
+    <div id="header"></div>
 
 
 <main class="container">
@@ -55,7 +45,7 @@
 
     </section>
 
-    <section id="resources">
+    <section id="news">
 
         <h2>News</h2>
         <p>Second round: October 17th, Campus Gløshaugen, room S7.</p>
@@ -65,51 +55,6 @@
         </p>
 
         
-
-    </section>
-
-    <section id="problems">
-
-        <h2>Problems</h2>
-
-        <p>
-            A collection of problems that I have written,
-            solved, or found interesting.
-        </p>
-
-        <ul>
-            <li>
-                <a href="problems/olympiad.html">
-                    Olympiad problems
-                </a>
-            </li>
-
-            <li>
-                <a href="pdf/problems.pdf">
-                    Download problem collection (PDF)
-                </a>
-            </li>
-        </ul>
-
-    </section>
-
-    <section id="resources">
-
-        <h2>Resources</h2>
-
-        <ul>
-            <li>
-                <a href="pdf/notes.pdf">
-                    Mathematical notes (PDF)
-                </a>
-            </li>
-
-            <li>
-                <a href="https://github.com/">
-                    GitHub
-                </a>
-            </li>
-        </ul>
 
     </section>
 
@@ -173,6 +118,14 @@
             </p>
         </div>
     </footer>
+
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+    </script>
 
 </body>
 </html>
