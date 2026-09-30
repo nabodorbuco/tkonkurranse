@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Trøndelagkonkurransen</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            }
+        };
+    </script>
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+
+</head>
+
+
+<body>
+
+<div id="header"></div>
+
+<main class="container">
+
+  <section id="grades">
+
+    <h2>Problems First Round </h2>
+
+    <h3>Level I - First Part </h3>
+
+    <div class="math">
+        <b>Choose and solve only one of the following problems:</b>
+        \[\rule{0pt}{0cm}\]
+        
+        <b>Problem 1</b><br>
+        Nils and Bianca are studying a particular type of fly, the $\textit{rubrum diptera}$. These flies are born blue, and 24 hours after being born, they turn red. Then, 24 hours after they have turned red, if they have eaten the necessary amount of food, they give birth to a blue fly.
+
+        As long as they keep eating, the dipteras keep reproducing every 24 hours.
+
+        Assuming the dipteras eat the necessary amount of food constantly once they are born, determine if the size of a swarm from one fly can eventually reach a size of exactly $N=2026$.
+        \[\rule{0pt}{0cm}\] 
+
+        <b>Problem 2</b><br>
+        Bianca wrote the following numbers on the whiteboard
+        $$A,B,C,D,E,F$$
+        such that any of those values is either $0,1,2,3,\ldots$ up to 9. Nils noticed that he could form three pairs of numbers; for example, $(A,B),(C,D)$ and $(E,F)$, such that the product of each pair has 1 as the last digit; for example, the last digit of $3\cdot4$ is 2.
+
+        If all the pairs are different, determine the possible values of $A+B+C+D+E+F$.
+
+        (The pairs (1,2) and (2,1) are the same, but (2,3) and (3,3) are not.)
+    </div>
+
+    <h3>Level I - Second Part </h3>
+
+    <div class="math">
+        Bianca proposes the following problem to Nils, she constructs a big triangular array of numbers as shown below 
+        \[\rule{0pt}{0cm}\]
+
+        <div class="figure">
+            <img src="round1/im1.png" alt="Hello again" width="300">
+        </div>
+
+        such that the possible values of $a,b,c,$ and so on are $-1,0$ and 1. She first chooses one value for $a$, and then randomly assigns values making sure that no two adjacent values are equal.
+        \[\rule{0pt}{0cm}\]
+        <b>Task 1:</b> If the bottom of the array has 6 numbers, show that the sum of all the values in the array is independent of the choice of $a$.
+    
+        \[\rule{0pt}{0cm}\]
+        <b>Task 2:</b> If the bottom of the array has 2025 numbers, show that the sum of all the values in the array is independent of the choice of $a$.
+
+        Nils, would also like to give Bianca a similar problem, either using arrays of numbers or sums of integers or anything interesting he can think of.
+
+        \[\rule{0pt}{0cm}\]
+        <b>Task 3:</b> Help Nils create a nice problem he can give to Bianca.
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+<footer>
+
+    <div class="container">
+        <a href="index.html">
+            ← Back to home
+        </a>
+    </div>
+
+</footer>
+
+<script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+    </script>
+
+</body>
+</html>

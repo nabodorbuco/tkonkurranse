@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     margin: 0;
     font-family: Georgia, "Times New Roman", serif;
@@ -11,10 +16,28 @@ body {
     background: #f7f7f7;
 }
 
+.center-image {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
 .container {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: auto;
-    padding: 0 25px;
+    padding: 0 20px;
+}
+
+.figure {
+    width: 100%;
+    text-align: center;
+}
+
+.figure img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
 }
 
 /* Table for scores  */
@@ -36,7 +59,7 @@ body {
 }
 .grades-table th:last-child,
 .grades-table td:last-child {
-    padding-right: -15px;
+    padding-right: 5px;
 }
 
 .grades-table th {
@@ -144,6 +167,16 @@ h3 {
     overflow-x: auto;
 }
 
+.math .figure {
+    width: 100%;
+}
+
+.math .figure img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
 
 /* Links */
 

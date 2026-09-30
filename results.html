@@ -30,27 +30,7 @@
 
 <body>
 
-<header>
-
-    <div class="container">
-
-        <h1>The Trøndelag Konkurranse</h1>
-
-        <p class="subtitle">
-            Mathematics olympiad in the region of Trøndelag.
-        </p>
-
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="#problems">Problems</a>
-            <a href="results.html">Results</a>
-            <a href="#resources">Resources</a>
-        </nav>
-
-    </div>
-
-</header>
-
+<div id="header"></div>
 
 <main class="container">
 
@@ -70,8 +50,8 @@
         <tbody>
             <tr>
                 <td>A001</td>
-                <td>92</td>
-                <td>88</td>
+                <td>5</td>
+                <td>4</td>
             </tr>
 
             <tr>
@@ -82,14 +62,14 @@
 
             <tr>
                 <td>A003</td>
-                <td>71</td>
-                <td>68</td>
+                <td>9</td>
+                <td>2</td>
             </tr>
 
             <tr>
                 <td>A004</td>
-                <td>58</td>
-                <td>55</td>
+                <td>5</td>
+                <td>3</td>
             </tr>
         </tbody>
     </table>
@@ -110,6 +90,13 @@
 
 </footer>
 
-</body>
+<script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+    </script>
 
+</body>
 </html>
