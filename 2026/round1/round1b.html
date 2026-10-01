@@ -43,9 +43,9 @@
             
             <div class="math-columns">
                 <div>
-                <b>Problem 1</b><br>The figure shows an equilateral triangle of side 1, and three internal squares tangent to the base of the triangle and to each other as shown. The respective sides of the squares are $a,2a$ and $3a$, and as shown, the smallest and largest squares each touch one additional side with a vertex. Knowing that $a$ can be expressed as
-                $$a=\frac{A+B\sqrt{3}}{C},$$
-                with $A,B,C\in\mathbb{Z}$ and the expression is as reduced as possible, determine the value of $A+B+C$.
+                    <b>Problem 1</b><br>The figure shows an equilateral triangle of side 1, and three internal squares tangent to the base of the triangle and to each other as shown. The respective sides of the squares are $a,2a$ and $3a$, and as shown, the smallest and largest squares each touch one additional side with a vertex. Knowing that $a$ can be expressed as
+                    $$a=\frac{A+B\sqrt{3}}{C},$$
+                    with $A,B,C\in\mathbb{Z}$ and the expression is as reduced as possible, determine the value of $A+B+C$.
                 </div>
 
                 <div>
@@ -57,13 +57,11 @@
             \[\rule{0pt}{0cm}\] 
 
             <b>Problem 2</b><br>
-            Bianca wrote the following numbers on the whiteboard
-            $$A,B,C,D,E,F$$
-            <p>such that any of those values is either $0,1,2,3,\ldots$ up to 9. Nils noticed that he could form three pairs of numbers; for example, $(A,B),(C,D)$ and $(E,F)$, such that the product of each pair has 1 as the last digit; for example, the last digit of $3\cdot4$ is 2.
+                Bianca has a calculator with two special buttons $A$ and $B$. Given a certain value $x$, $A$ takes $x$ into $\frac1x$, while $B$ takes $x$ into $1-x$.
 
-            If all the pairs are different, determine the possible values of $A+B+C+D+E+F$.</p>
-
-            Note: The pairs (1,2) and (2,1) are the same, but (2,3) and (3,3) are not.
+                If she starts with some number $x$ and presses the special buttons in the order
+                    $$A,B,A,B,A,B,\ldots,A,B$$
+                starting with $A$ and alternating each time such that each button is pressed 1013 times, which value will she obtain at the end?
         </div>
         </div>
 
@@ -106,7 +104,7 @@
 </footer>
 
 <script>
-        fetch('/tkonkurranse/header.html')
+        fetch('/header.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('header').innerHTML = data;
