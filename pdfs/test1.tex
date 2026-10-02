@@ -1,0 +1,84 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amssymb,amsmath,amsfonts}
+\usepackage{graphicx,graphics}
+\usepackage{lipsum}
+%\usepackage{multicol}
+\usepackage{mathtools}
+\usepackage{pstricks}
+\usepackage{pstricks-add}
+\usepackage{pst-func}
+\usepackage{anysize}
+\marginsize{2cm}{2cm}{1.5cm}{2cm} %izq,der,arr,abj%
+%\stackrel{\text{compacidad}}{=}
+
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\DD}{\mathbb{D}}
+\newcommand{\FF}{\mathbb{F}}
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\RRR}{\overline{\mathbb{R}}}
+\newcommand{\QQ}{\mathbb{Q}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\calA}{\mathcal{A}}
+\newcommand{\calB}{\mathcal{B}}
+\newcommand{\calC}{\mathcal{C}}
+\newcommand{\calD}{\mathcal{D}}
+\newcommand{\calE}{\mathcal{E}}
+\newcommand{\calH}{\mathcal{H}}
+\newcommand{\calL}{\mathcal{L}}
+\newcommand{\calM}{\mathcal{M}}
+\newcommand{\calN}{\mathcal{N}}
+\newcommand{\calV}{\mathcal{V}}
+\newcommand{\mfa}{\mathfrak{a}}
+\newcommand{\mfp}{\mathfrak{p}}
+\newcommand{\ideal}{\triangleleft}
+\newcommand{\Ra}{\Longrightarrow}
+\newcommand{\Le}{\Leftarrow}
+\newcommand{\longLe}{\Longleftarrow}
+\newcommand{\gpar}[1]{\left({#1}\right)}
+\newcommand{\sii}{\Longleftrightarrow}
+\newcommand{\ds}{\displaystyle}
+\newcommand{\fail}{\Rightarrow\Leftarrow}
+%\newcommand{\vs}{\vspace}
+\newcommand{\hs}{\hspace}
+\newcommand{\dd}{\dfrac}
+\newrgbcolor{asd1}{0.65 0.498 0.274}
+\newrgbcolor{gray}{0.7 0.7 0.7}
+\newrgbcolor{zzttqq}{0.6 0.2 0}
+
+\setlength{\parskip}{10pt}
+
+\begin{document}
+	
+	\begin{center}
+		\Large \bf Trøndelagkonkurransen\\
+		Variety of Problems		
+	\end{center}
+	
+\begin{enumerate}
+	\item The figure below shows two circumferences of centers $O$ and $O'$ tangent to each other. $A$ in the larger circumference is collinear with $O$ and $O'$. The chords $AP$ and $AQ$ are tangent to the inner circumference. If $\angle QAP=60^\circ$, determine the ratio of the areas of the circles.
+\end{enumerate}
+
+\begin{figure}[h]
+	\centering
+	\psset{unit=.5cm}
+	\begin{pspicture*}(0,0)(15,14.1)
+		\pscircle(8,8){6}
+		\pscircle(9.98,8){4.02}
+		\psline(2,8)(10.95,13.22)
+		\psline(2,8)(10.95,2.78)
+		\begin{footnotesize}
+			\rput[tl](2.6,8.22){$60^\circ$}
+			\psdots[dotstyle=*](8,8)
+			\psdots[dotstyle=*](9.98,8)
+			\rput[bl](8.08,8.12){$O$}
+			\rput[bl](1.3,7.8){$A$}
+			\rput[bl](10.06,8.12){$O'$}
+			\rput[bl](11.04,13.34){$P$}
+			\rput[bl](11.1,2.2){$Q$}
+		\end{footnotesize}
+	\end{pspicture*}
+\end{figure}	
+	
+\end{document}
