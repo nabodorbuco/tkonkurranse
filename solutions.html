@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Trøndelagkonkurransen</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="icon.png">
+
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            }
+        };
+    </script>
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+</head>
+
+
+<body>
+
+<div id="header"></div>
+
+<main class="container">
+
+    <section id="solutions">
+
+    <h2>Solutions</h2>
+
+        <ul>
+            <li>
+                2026 First round <a href="/tkonkurranse/2026/round1/sol1.pdf">
+                    Level I
+                </a>
+            </li>
+
+            <li>
+                2026 First round <a href="/tkonkurranse/2026/round1/round1b.html">
+                    Level II
+                </a>
+            </li>
+        </ul>
+
+    </section>
+
+
+</main>
+
+
+<footer>
+
+    <div class="container">
+        <a href="/tkonkurranse/index.html">
+            ← Back to home
+        </a>
+    </div>
+
+</footer>
+
+<script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+    </script>
+
+</body>
+</html>

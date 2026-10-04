@@ -1,0 +1,367 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amssymb,amsmath,amsfonts}
+\usepackage{graphicx,graphics}
+\usepackage{lipsum}
+\usepackage{multicol}
+\usepackage{mathtools}
+\usepackage{pstricks}
+%\usepackage{pstricks-add}
+%\usepackage{pst-func}
+\usepackage{pst-plot}
+\usepackage{pst-xkey}
+\usepackage{anysize}
+\marginsize{2cm}{2cm}{1.5cm}{2cm} %izq,der,arr,abj%
+%\stackrel{\text{compacidad}}{=}
+
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\QQ}{\mathbb{Q}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\calA}{\mathcal{A}}
+\newcommand{\calB}{\mathcal{B}}
+\newcommand{\calC}{\mathcal{C}}
+\newcommand{\Ra}{\Longrightarrow}
+\newcommand{\Le}{\Leftarrow}
+\newcommand{\longLe}{\Longleftarrow}
+\newcommand{\gpar}[1]{\left({#1}\right)}
+\newcommand{\sii}{\Longleftrightarrow}
+\newcommand{\ds}{\displaystyle}
+\newcommand{\fail}{\Rightarrow\Leftarrow}
+%\newcommand{\vs}{\vspace}
+\newcommand{\hs}{\hspace}
+\newcommand{\dd}{\dfrac}
+\newrgbcolor{asd1}{0.65 0.498 0.274}
+\newrgbcolor{gray}{0.7 0.7 0.7}
+\newrgbcolor{zzttqq}{0.6 0.2 0}
+
+\setlength{\parskip}{10pt}
+
+
+\begin{document}
+\begingroup
+\setlength{\parindent}{0pt}
+
+\begin{center}
+	\huge $$\sqrt{\scalebox{2.1}{$\tau$}}$$
+	\Large Trøndelagkonkurranse 2026 - Level I - Solutions\\[2pt] First round - 26.09\\
+	1st part
+\end{center}
+\vspace{1cm}
+
+{\bf Choose and solve only one of the following problems:}
+
+\vspace{.7cm}
+{\bf Problem 1}
+
+Nils and Bianca are studying a particular type of fly, the {\it rubrum diptera}. These flies are born blue, and 24 hours after being born, they turn red. Then, 24 hours after they have turned red, if they have eaten the necessary amount of food, they give birth to a blue fly.
+
+As long as they keep eating, the dipteras keep reproducing every 24 hours.
+
+Assuming the dipteras eat the necessary amount of food constantly once they are born, determine if the size of a swarm from one fly can eventually reach a size of exactly $N=2026$. 
+
+\vspace{.7cm}
+{\bf Problem 2}
+
+Bianca wrote the following numbers on the whiteboard
+$$A,B,C,D,E,F$$
+such that any of those values is either $0,1,2,3,\ldots$ up to 9. Nils noticed that he could form three pairs of numbers; for example, $(A,B),(C,D)$ and $(E,F)$, such that the product of each pair has 1 as the last digit; for example, the last digit of $3\cdot4$ is 2.
+
+If all the pairs are different, determine the possible values of $A+B+C+D+E+F$.
+
+(The pairs (1,2) and (2,1) are the same, but (2,3) and (3,3) are not.)
+
+\newpage %-----------------------------------
+
+{\bf Problem 1}
+
+If we start we a blue fly, after 24 hour we will have a red fly, then 24 hours later we will have one red fly and a newborn blue fly. In general, if at any stage we have $R$ red flies and $B$ blue flies, 24 hours later we will have $R+B$ red flies and $R$ blue flies. The blues turned red, and all the previous red flies gave birth to a blue fly. Let's make a table to see how the number of flies evolves every 24 hours.
+$$\begin{array}{c|c|c}
+	B & R & Total  \\\hline
+	1 & 0 & 1 \\
+	0 & 1 & 1 \\
+	1 & 1 & 2 \\
+	1 & 2 & 3 \\
+	2 & 3 & 5 \\
+	3 & 5 & 8 \\
+	5 & 8 & 13 \\
+	8 & 13 & 21 \\
+	13 & 21 & 34 \\
+\end{array}$$
+The total follows the well-known Fibonacci sequence, an increasing sequence in which every value is the sum of the two previous numbers. If we keep exploring the sequence, we easily obtain the values
+$$1,1,2,3,5,8,13,21,34,55,89,144,233,377,610,987,1597,2584$$
+Here, we can see that after 1597, the next value surpasses 2026 by about 500. Hence, the size of a swarm can {\bf never} reach a size of $N=2026$.
+
+\vspace{.6cm}
+{\bf Problem 2}
+
+Since the greatest a product can be is $9\cdot9=81$, the possible candidates for a product of two digits are
+$$1,11,21,31,41,51,61,71,81.$$
+From the list, we have that 11,31,41,61 and 71 are primes. Now the list is reduced to 
+$$1,21,51,81.$$
+From here, the non-trivial products are $21=3\cdot7$, $51=3\cdot17$ and $9\cdot9=81$, as pointed out at the beginning. Since 17 is prime, we are left with the values
+$$1,21,81,$$
+whose products are $1=1\cdot1$, $21=3\cdot7$ and $81=9\cdot9$. Thus, the only possible pairs are
+$$(1,1),(3,7)\text{ and }(9,9),$$
+which means that the only possible value for $A+B+C+D+E+F$ is
+$$1+1+3+7+9+9=30.$$
+
+\newpage %-----------------------------------
+
+
+\begin{center}
+	\huge $$\sqrt{\scalebox{2.1}{$\tau$}}$$
+	\Large Trøndelagkonkurranse 2026 - Level I - Solutions\\[2pt] First round - 26.09\\
+	2nd part
+\end{center}
+\vspace{1cm}
+
+Bianca proposes the following problem to Nils, she constructs a big triangular array of numbers as shown below 
+
+\begin{figure}[h]
+	\centering
+	\psset{unit=1cm}
+	\begin{pspicture*}(-.3,-0.4)(3.3,3.1)
+		\psline[linecolor=gray,strokeopacity=.6](-.5,-.9)(1.5,2.7)
+		\psline[linecolor=gray,strokeopacity=.6](.5,-.9)(2,1.8)
+		\psline[linecolor=gray,strokeopacity=.6](1.5,-.9)(2.5,.9)
+		\psline[linecolor=gray,strokeopacity=.6](0,0)(3,0)
+		\psline[linecolor=gray,strokeopacity=.6](.5,.9)(2.5,.9)
+		\psline[linecolor=gray,strokeopacity=.6](1,1.8)(2,1.8)
+		\psline[linecolor=gray,strokeopacity=.6](.5,.9)(1.5,-.9)
+		\psline[linecolor=gray,strokeopacity=.6](1,1.8)(2.5,-.9)
+		\psline[linecolor=gray,strokeopacity=.6](1.5,2.7)(3.5,-.9)
+		
+		\put(1.5,2.7){$a$}
+		%
+		\put(1,1.8){$b$}
+		\put(2,1.8){$c$}
+		%
+		\put(.5,0.9){$d$}
+		\put(1.5,0.9){$e$}
+		\put(2.5,0.9){$f$}
+		%
+		\put(0,0){$\vdots$}
+		\put(1,0){$\vdots$}
+		\put(2,0){$\vdots$}
+		\put(3,0){$\vdots$}
+	\end{pspicture*}
+	%\caption{$L$-shape figure}
+	%\label{fig:lshape}
+\end{figure}
+
+such that the possible values of $a,b,c,$ and so on are $-1,0$ and 1. She first chooses one value for $a$, and then randomly assigns values making sure that no two adjacent values are equal.
+
+{\bf Task 1:} If the bottom of the array has 6 numbers, show that the sum of all the values in the array is independent of the choice of $a$.
+
+{\bf Task 2:} If the bottom of the array has 2025 numbers, show that the sum of all the values in the array is independent of the choice of $a$.
+
+Nils, would also like to give Bianca a similar problem, either using arrays of numbers or sums of integers or anything interesting he can think of.
+
+{\bf Task 3:} Help Nils create a nice problem he can give to Bianca.
+
+\newpage %-----------------------------------
+
+{\bf Task 1:} Let the first value at the top be $a$, then without loss of generality let's call $b$ and $c$ the values in the second row (in that order). We are still not assigning specific values. Notice that this {\bf uniquely} determines the values on the third row, since there the middle value can only be $a$, and this implies that the value of the left has to be a $c$ and the one on the right has to be a $b$. This reasoning allows us to complete the whole array as follows:
+
+\begin{figure}[h]
+	\centering
+	\psset{unit=1cm}
+	\begin{pspicture*}(-1,-2)(4.3,3.1)
+		\psline[linecolor=gray,strokeopacity=.6](-1,-1.8)(1.5,2.7)
+		\psline[linecolor=gray,strokeopacity=.6](0,-1.8)(2,1.8)
+		\psline[linecolor=gray,strokeopacity=.6](1,-1.8)(2.5,.9)
+		\psline[linecolor=gray,strokeopacity=.6](2,-1.8)(3,0)
+		\psline[linecolor=gray,strokeopacity=.6](3,-1.8)(3.5,-.9)
+		
+		\psline[linecolor=gray,strokeopacity=.6](-1,-1.8)(4,-1.8)
+		\psline[linecolor=gray,strokeopacity=.6](-.5,-.9)(3.5,-.9)
+		\psline[linecolor=gray,strokeopacity=.6](0,0)(3,0)
+		\psline[linecolor=gray,strokeopacity=.6](.5,.9)(2.5,.9)
+		\psline[linecolor=gray,strokeopacity=.6](1,1.8)(2,1.8)
+		
+		\psline[linecolor=gray,strokeopacity=.6](-.5,-.9)(0,-1.8)
+		\psline[linecolor=gray,strokeopacity=.6](0,0)(1,-1.8)
+		\psline[linecolor=gray,strokeopacity=.6](.5,.9)(2,-1.8)
+		\psline[linecolor=gray,strokeopacity=.6](1,1.8)(3,-1.8)
+		\psline[linecolor=gray,strokeopacity=.6](1.5,2.7)(4,-1.8)
+		
+		\put(1.5,2.7){$a$}
+		%
+		\put(1,1.8){$b$}
+		\put(2,1.8){$c$}
+		%
+		\put(.5,0.9){$c$}
+		\put(1.5,0.9){$a$}
+		\put(2.5,0.9){$b$}
+		%
+		\put(0,0){$a$}
+		\put(1,0){$b$}
+		\put(2,0){$c$}
+		\put(3,0){$a$}
+		%
+		\put(-.5,-.9){$b$}
+		\put(.5,-.9){$c$}
+		\put(1.5,-.9){$a$}
+		\put(2.5,-.9){$b$}
+		\put(3.5,-.9){$c$}
+		%
+		\put(-1,-1.8){$c$}
+		\put(0,-1.8){$a$}
+		\put(1,-1.8){$b$}
+		\put(2,-1.8){$c$}
+		\put(3,-1.8){$a$}
+		\put(4,-1.8){$b$}
+		
+	\end{pspicture*}
+	%\caption{$L$-shape figure}
+	%\label{fig:lshape}
+\end{figure}
+Since no two adjacent values are equal, each of $a,b$ and $c$ take one and only one value from the set $\{-1,0,1\}$, which means that $a+b+c=0$. With this in mind, let's make a table with the sums by row
+$$\begin{array}{c|c}
+	Row & Sum   \\\hline
+	1 & a  \\
+	2 & b+c  \\
+	3 & 0 \\
+	4 & a  \\
+	5 & b+c  \\
+	6 & 0 \\
+\end{array}$$
+Finally, the sum of all the values in the array will be obtained by adding up these sums, i.e.
+$$a+(b+c)+a+(b+c)=0.$$
+Thus, the sum of all the values in the array does not depend on the choice of $a$.
+
+{\bf Task 2:} We will justify first that whenever we add three rows of numbers at the bottom of an array with $n=3k$ values in the base, the sum of the whole array stays the same. To begin with, suppose the left corner of an array are $\textcolor{blue}a$ and $\textcolor{blue}b$, then by completing the nearby numbers we have that the corner loos like this
+\begin{figure}[h]
+	\centering
+	\psset{unit=1cm}
+	\begin{pspicture*}(-.3,-0.2)(2.3,2.2)
+		\psline[linecolor=gray,strokeopacity=.6](0,0)(1,1.8)
+		\psline[linecolor=gray,strokeopacity=.6](1,0)(1.5,.9)
+		
+		\psline[linecolor=gray,strokeopacity=.6](0,0)(2,0)
+		\psline[linecolor=gray,strokeopacity=.6](.5,.9)(1.5,.9)
+			
+		\psline[linecolor=gray,strokeopacity=.6](.5,.9)(1,0)
+		\psline[linecolor=gray,strokeopacity=.6](1,1.8)(2,0)
+			
+		\put(1,1.8){$b$}
+			
+		\put(.5,.9){$c$}
+		\put(1.5,.9){$a$}
+			
+		\put(0,0){$\textcolor{blue}a$}
+		\put(1,0){$\textcolor{blue}b$}
+		\put(2,0){$c$}
+		\end{pspicture*}
+	\caption{Left Corner}
+	\label{corner}
+\end{figure}
+
+Then, if we complete the numbers to the right, we will obtain something like this
+
+\begin{figure}[h]
+	\centering
+	\psset{unit=1cm}
+	\begin{pspicture*}(-.5,-.4)(11.3,2.3)
+		\psline[linecolor=gray,strokeopacity=.6](0,0)(1,1.8)
+		\psline[linecolor=gray,strokeopacity=.6](1,0)(2,1.8)
+		\psline[linecolor=gray,strokeopacity=.6](2,0)(3,1.8)
+		\psline[linecolor=gray,strokeopacity=.6](3,0)(4,1.8)
+		\psline[linecolor=gray,strokeopacity=.6](4,0)(5,1.8)
+		\psline[linecolor=gray,strokeopacity=.6](5,0)(6,1.8)
+		\psline[linecolor=gray,strokeopacity=.6](6,0)(7,1.8)
+		\psline[linecolor=gray,strokeopacity=.6](7,0)(8,1.8)
+		\psline[linecolor=gray,strokeopacity=.6](9,0)(10,1.8)
+		\psline[linecolor=gray,strokeopacity=.6](10,0)(10.5,.9)
+		
+		\psline[linecolor=gray,strokeopacity=.6](0,0)(8,0)
+		\psline[linecolor=gray,strokeopacity=.6](.5,.9)(8,.9)
+		\psline[linecolor=gray,strokeopacity=.6](1,1.8)(8,1.8)
+		\psline[linecolor=gray,strokeopacity=.6](9,0)(11,0)
+		\psline[linecolor=gray,strokeopacity=.6](9,.9)(10.5,.9)
+		\psline[linecolor=gray,strokeopacity=.6](9,1.8)(10,1.8)
+		
+		\psline[linecolor=gray,strokeopacity=.6](.5,.9)(1,0)
+		\psline[linecolor=gray,strokeopacity=.6](1,1.8)(2,0)
+		\psline[linecolor=gray,strokeopacity=.6](2,1.8)(3,0)
+		\psline[linecolor=gray,strokeopacity=.6](3,1.8)(4,0)
+		\psline[linecolor=gray,strokeopacity=.6](4,1.8)(5,0)
+		\psline[linecolor=gray,strokeopacity=.6](5,1.8)(6,0)
+		\psline[linecolor=gray,strokeopacity=.6](6,1.8)(7,0)
+		\psline[linecolor=gray,strokeopacity=.6](7,1.8)(8,0)
+		\psline[linecolor=gray,strokeopacity=.6](10,1.8)(11,0)
+		\psline[linecolor=gray,strokeopacity=.6](9,1.8)(10,0)
+		
+		
+		\put(1,1.8){$b$}
+		\put(2,1.8){$c$}
+		\put(3,1.8){$a$}
+		\put(4,1.8){$b$}
+		\put(5,1.8){$c$}
+		\put(6,1.8){$a$}
+		\put(7,1.8){$b$}
+		\put(8,1.8){$c$}
+		\put(10,1.8){$b$}
+		\put(9,1.8){$a$}
+		
+		%
+		\put(.5,0.9){$c$}
+		\put(1.5,0.9){$a$}
+		\put(2.5,0.9){$b$}
+		\put(3.5,0.9){$c$}
+		\put(4.5,0.9){$a$}
+		\put(5.5,0.9){$b$}
+		\put(6.5,0.9){$c$}
+		\put(7.5,0.9){$a$}
+		\put(8.25,0.9){$\cdots$}
+		\put(9.5,0.9){$c$}
+		\put(10.5,0.9){$a$}
+		%
+		\put(0,0){$a$}
+		\put(1,0){$b$}
+		\put(2,0){$c$}
+		\put(3,0){$a$}
+		\put(4,0){$b$}
+		\put(5,0){$c$}
+		\put(6,0){$a$}
+		\put(7,0){$b$}
+		\put(8,0){$c$}
+		\put(9,0){$a$}
+		\put(10,0){$b$}
+		\put(11,0){$c$}
+	\end{pspicture*}
+	\caption{Bottom of Array}
+	\label{bottom}
+\end{figure}
+
+\newpage
+
+Here, notice the the bottom has the numbers
+$$a,b,c,a,b,c,a,b,c\ldots a,b,c$$
+meaning that its sum is zero. Now, we want to add one row after this one, then by following the same procedure, the next row, say $r_1$, has the elements
+$$b,c,a,b,c,a,b,c\ldots a,b,c,a,b$$
+which has $3k+1$ elements, with sum
+$$(b+c+a)+(b+c+a)+(b+c+a)+\ldots+(b+c+a)+b=b.$$
+We add now the next row, say $r_2$. Applying the same criteria, $r_2$ will be 
+$$c,a,b,c,a,b\ldots a,b,c,a,b,c,a$$
+which has $3k+2$ elements, with sum
+$$(c+a+b)+(c+a+b)+(c+a+b)+\ldots+(c+a+b)+c+a=a+c.$$
+For the next row, say $r_3$ will be
+$$a,b,c,a,b,c\ldots,a,b,c,a,b,c$$
+which has $3k+3$ elements, with sum
+$$(a+b+c)+(a+b+c)+(a+b+c)+\ldots+(a+b+c)+(a+b+c)=0.$$
+Finally, we see that the sums of the numbers in $r_1,r_2$ and $r_3$ is $b+(a+c)+0=0$. This shows that every time we add a block of numbers like the one in Figure \ref{bottom}, the sum stays the same. We conclude now by noticing that the smallest an array can be while having a base of $n=3k$ elements is for $n=3$, i.e. an array like in Figure \ref{corner}, whose sum is zero. Thus, inductively, every time we add a block of three rows, the sum is still zero. Since $2025$ is divisible by 3, we can build such an array that has 2025 values in the base in finite steps, whose elements will add up to zero, which is independent of the choice of the top corner value.
+\endgroup
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
