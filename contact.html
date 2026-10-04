@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Trøndelagkonkurransen</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="icon.png">
+
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            }
+        };
+    </script>
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+</head>
+
+
+<body>
+
+<div id="header"></div>
+
+<main class="container">
+
+    <section id="contact">
+
+    <h2>Contact</h2>
+
+        <p>
+            For questions regarding the competition, please contact:
+        </p>
+
+        <ul>
+            <li>
+                <a href="mailto:">cristian.baeza@ntnu.no</a>
+            </li>
+        </ul>
+    </section>
+
+
+</main>
+
+
+<footer>
+
+    <div class="container">
+        <a href="/tkonkurranse/index.html">
+            ← Back to home
+        </a>
+    </div>
+
+</footer>
+
+<script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+    </script>
+
+</body>
+</html>
