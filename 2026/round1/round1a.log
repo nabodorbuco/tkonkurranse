@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2026.2.1)  7 OCT 2026 00:20
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2026.2.1)  7 OCT 2026 00:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -562,15 +562,18 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 46.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-] [2]
+]
+File: im3.png Graphic file (type bmp)
+<im3.png>
+ [2]
 (./round1a.aux) ) 
 Here is how much of TeX's memory you used:
- 12893 strings out of 476191
- 233716 string characters out of 5812073
- 679652 words of memory out of 5000000
- 33441 multiletter control sequences out of 15000+600000
+ 12903 strings out of 476191
+ 233814 string characters out of 5812073
+ 677929 words of memory out of 5000000
+ 33448 multiletter control sequences out of 15000+600000
  478582 words of font info for 69 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 73i,6n,77p,640b,379s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 73i,5n,77p,640b,232s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on round1a.pdf (2 pages).
