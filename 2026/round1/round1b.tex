@@ -29,11 +29,13 @@
 \newcommand{\hs}{\hspace}
 \newcommand{\dd}{\dfrac}
 \setlength{\parskip}{10pt}
+\definecolor{pink1}{RGB}{255, 16, 240}
 
 
 \begin{document}
 \begingroup
 \setlength{\parindent}{0pt}
+\thispagestyle{empty}
 
 \begin{center}
 	\huge $$\sqrt{\scalebox{2.1}{$\tau$}}$$
@@ -56,7 +58,17 @@
 	\vfill
 	\columnbreak
 	\begin{center}
-		\includegraphics[scale=0.45]{im2.png}
+		\psset{unit=1cm}
+	\begin{pspicture*}(-.1,-.1)(6,6)
+		\pspolygon[fillcolor=pink1,fillstyle=solid,opacity=.7,linecolor=pink1](0.416,0)(0.416,.722)(1.1389,.722)(1.1389,0)
+		\pspolygon[fillcolor=pink1,fillstyle=solid,opacity=.7,linecolor=pink1](1.1389,0)(1.1389,1.444)(2.583,1.444)(2.583,0)	\pspolygon[fillcolor=pink1,fillstyle=solid,opacity=.7,linecolor=pink1](2.583,0)(2.583,2.166)(4.77,2.166)(4.77,0)
+				\pspolygon(0,0)(3,5.4)(6,0)
+				
+		\put(1.1,2.7){\large 1}
+		\put(1.7,1.6){$2a$}
+		\put(.7,0.85){$a$}
+		\put(3.5,2.3){$3a$}		
+	\end{pspicture*}
 	\end{center}
 \end{multicols}
 
@@ -80,9 +92,38 @@ starting with $A$ and alternating each time such that each button is pressed 101
 
 Bianca proposes the following problem to Nils, she constructs a big triangular array of numbers as shown below 
 
-\begin{center}
-	\includegraphics[scale=0.5]{im3.png}
-\end{center}
+\begin{figure}[h]
+	\centering
+	\psset{unit=1cm}
+	\begin{pspicture*}(-.3,-0.4)(3.3,3.1)
+		\psline[linecolor=gray,strokeopacity=.6](-.5,-.9)(1.5,2.7)
+		\psline[linecolor=gray,strokeopacity=.6](.5,-.9)(2,1.8)
+		\psline[linecolor=gray,strokeopacity=.6](1.5,-.9)(2.5,.9)
+		\psline[linecolor=gray,strokeopacity=.6](0,0)(3,0)
+		\psline[linecolor=gray,strokeopacity=.6](.5,.9)(2.5,.9)
+		\psline[linecolor=gray,strokeopacity=.6](1,1.8)(2,1.8)
+		\psline[linecolor=gray,strokeopacity=.6](.5,.9)(1.5,-.9)
+		\psline[linecolor=gray,strokeopacity=.6](1,1.8)(2.5,-.9)
+		\psline[linecolor=gray,strokeopacity=.6](1.5,2.7)(3.5,-.9)
+		
+		\put(1.5,2.7){$a$}
+		%
+		\put(1,1.8){$b$}
+		\put(2,1.8){$c$}
+		%
+		\put(.5,0.9){$d$}
+		\put(1.5,0.9){$e$}
+		\put(2.5,0.9){$f$}
+		%
+		\put(0,0){$\vdots$}
+		\put(1,0){$\vdots$}
+		\put(2,0){$\vdots$}
+		\put(3,0){$\vdots$}
+		
+	\end{pspicture*}
+	%\caption{$L$-shape figure}
+	%\label{fig:lshape}
+\end{figure}
 
 such that the possible values of $a,b,c,$ and so on are $-1,0$ and 1. She first chooses one value for $a$, and then randomly assigns values making sure that no two adjacent values are equal.
 
