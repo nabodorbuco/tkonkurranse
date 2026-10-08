@@ -1,6 +1,7 @@
 \documentclass[a4paper,12pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage{amssymb,amsmath,amsfonts}
+\usepackage{extarrows}
 \usepackage{graphicx,graphics}
 \usepackage{lipsum}
 \usepackage{multicol}
@@ -21,6 +22,7 @@
 \newcommand{\Ra}{\Longrightarrow}
 \newcommand{\Le}{\Leftarrow}
 \newcommand{\longLe}{\Longleftarrow}
+\newcommand{\larrow}{\xlongrightarrow{\phantom{fghij}}}
 \newcommand{\gpar}[1]{\left({#1}\right)}
 \newcommand{\sii}{\Longleftrightarrow}
 \newcommand{\ds}{\displaystyle}
@@ -103,6 +105,19 @@
 	\end{align*}
 	Finally, we have that
 	$$A+B+C=9-2+46=53.$$
+	
+	{\bf Problem 2}
+	
+	After computing some iterations of $A$ and $B$ for some value $x$, we find that
+	$$x\stackrel{A}{\raisebox{0.58ex}{\rule{1cm}{0.4pt}}\hspace{-.2cm}\longrightarrow}\frac1x\stackrel{B}{\raisebox{0.58ex}{\rule{1cm}{0.4pt}}\hspace{-.2cm}\longrightarrow}\frac{x-1}{x}\stackrel{A}{\raisebox{0.58ex}{\rule{1cm}{0.4pt}}\hspace{-.2cm}\longrightarrow}\frac{x}{x-1}\stackrel{B}{\raisebox{0.58ex}{\rule{1cm}{0.4pt}}\hspace{-.2cm}\longrightarrow}\frac{1}{1-x}\stackrel{A}{\raisebox{0.58ex}{\rule{1cm}{0.4pt}}\hspace{-.2cm}\longrightarrow}1-x\stackrel{B}{\raisebox{0.58ex}{\rule{1cm}{0.4pt}}\hspace{-.2cm}\longrightarrow}x$$
+	which means that the sequence $A,B,A,B,A,B$, takes $x$ into $x$.
+	
+	With this in mind, since the original sequence has length 2026, it suffices to find $l<5$ such that $2026=6k+l$ for some $k\in\NN$ . Notice that $2026=2022+4$ and 2022 is divisible by 2 and 3, hence it is divisible by 6. This tells us that, since every sequence of $A,B,A,B,A,B$ leaves $x$ unchanged, applying $A$ and $B$ alternating 2026 times is equivalent to just apply
+	$$A,B,A,B,$$
+	which, from the above diagram, we can see it will yield $\frac1{1-x}$, so this is the number Bianca will obtain.
+
+
+
 
 \newpage %-----------------------------------	
 	
@@ -157,6 +172,10 @@
 	Nils, would also like to give Bianca a similar problem, either using arrays of numbers or sums of integers or anything interesting he can think of.
 	
 	{\bf Task 3:} Help Nils create a nice problem he can give to Bianca.
+	
+	\hspace{2cm}
+	
+	{\bf See level I for solution.}
 	
 	\endgroup
 \end{document}
