@@ -1,7 +1,7 @@
 %!PS-Adobe-2.0
-%%Creator: dvips(k) 2021.1 (TeX Live 2022/dev)  Copyright 2021 Radical Eye Software
+%%Creator: dvips(k) 2023.1 (TeX Live 2023)  Copyright 2023 Radical Eye Software
 %%Title: sol2.dvi
-%%CreationDate: Thu Oct  8 07:50:47 2026
+%%CreationDate: Wed Oct 14 09:09:49 2026
 %%Pages: 4
 %%PageOrder: Ascend
 %%BoundingBox: 0 0 596 842
@@ -12,7 +12,7 @@
 %DVIPSWebPage: (www.radicaleye.com)
 %DVIPSCommandLine: /usr/bin/dvips -o sol2.ps sol2.dvi
 %DVIPSParameters: dpi=600
-%DVIPSSource:  TeX output 2026.10.08:0950
+%DVIPSSource:  TeX output 2026.10.14:1109
 %%BeginProcSet: tex.pro 0 0
 %!
 /TeXDict 300 dict def TeXDict begin/N{def}def/B{bind def}N/S{exch}N/X{S
@@ -70,7 +70,7 @@ B/g{0 M}B/h{1 M}B/i{2 M}B/j{3 M}B/k{4 M}B/w{0 rmoveto}B/l{p -4 w}B/m{p
 %%
 %% l3backend-header.dtx  (with options: `header,dvips')
 %% 
-%% Copyright (C) 2019-2022 The LaTeX Project
+%% Copyright (C) 2019-2024 The LaTeX Project
 %% 
 %% It may be distributed and/or modified under the conditions of
 %% the LaTeX Project Public License (LPPL), either version 1.3c of
@@ -164,8 +164,8 @@ false setglobal
       pdf.dest.y pdf.tmpc mul add
       pdf.dev.x add
     pdf.dest.x pdf.tmpb mul
-     pdf.dest.y pdf.tmpd mul add
-     pdf.dev.y add
+      pdf.dest.y pdf.tmpd mul add
+      pdf.dev.y add
   }
     def
 /pdf.bordertracking false def
@@ -313,83 +313,83 @@ false setglobal
       {
         counttomark /pdf.count exch def
           {
-           pdf.count 0 eq { exit } if
-           counttomark 2 roll
-           1 index /Rect eq
-             {
-               dup 4 array copy
-               dup dup
-                 1 get
-                 pdf.outerbox pdf.rect.ht
-                 pdf.linkmargin 2 mul add sub
-                 3 exch put
-               dup
-                 pdf.outerbox 2 get
-                 pdf.linkmargin add
-                 2 exch put
-               dup dup
-                 3 get
-                 pdf.outerbox pdf.rect.ht
-                 pdf.linkmargin 2 mul add add
-                 1 exch put
-               /pdf.currentrect exch  def
-               pdf.breaklink.write
-                 {
-                   pdf.currentrect
-                   dup
-                     pdf.outerbox 0 get
-                     pdf.linkmargin sub
-                     0 exch put
-                   dup
-                     pdf.outerbox 2 get
-                     pdf.linkmargin add
-                     2 exch put
-                   dup dup
-                     1 get
-                     pdf.baselineskip add
-                     1 exch put
-                   dup dup
-                     3 get
-                     pdf.baselineskip add
-                     3 exch put
-                   /pdf.currentrect exch def
-                   pdf.breaklink.write
+            pdf.count 0 eq { exit } if
+            counttomark 2 roll
+            1 index /Rect eq
+              {
+                dup 4 array copy
+                dup dup
+                  1 get
+                  pdf.outerbox pdf.rect.ht
+                  pdf.linkmargin 2 mul add sub
+                  3 exch put
+                dup
+                  pdf.outerbox 2 get
+                  pdf.linkmargin add
+                  2 exch put
+                dup dup
+                  3 get
+                  pdf.outerbox pdf.rect.ht
+                  pdf.linkmargin 2 mul add add
+                  1 exch put
+                /pdf.currentrect exch def
+                pdf.breaklink.write
+                  {
+                    pdf.currentrect
+                    dup
+                      pdf.outerbox 0 get
+                      pdf.linkmargin sub
+                      0 exch put
+                    dup
+                      pdf.outerbox 2 get
+                      pdf.linkmargin add
+                      2 exch put
+                    dup dup
+                      1 get
+                      pdf.baselineskip add
+                      1 exch put
+                    dup dup
+                      3 get
+                      pdf.baselineskip add
+                      3 exch put
+                    /pdf.currentrect exch def
+                    pdf.breaklink.write
                   }
                 1 index 3 get
                 pdf.linkmargin 2 mul add
                 pdf.outerbox pdf.rect.ht add
                 2 index 1 get sub
                 pdf.baselineskip div round cvi 1 sub
-                exch
-              repeat
-              pdf.currentrect
-              dup
-                pdf.outerbox 0 get
-                pdf.linkmargin sub
-                0 exch put
-              dup dup
-                1 get
-                pdf.baselineskip add
-                1 exch put
-              dup dup
-                3 get
-                pdf.baselineskip add
-                3 exch put
-              dup 2 index 2 get  2 exch put
-              /pdf.currentrect exch def
-              pdf.breaklink.write
-              SDict /pdf.pdfmark.good false put
-              exit
-            }
-            { pdf.count 2 sub /pdf.count exch def }
-          ifelse
-        }
-      loop
-    }
-  if
-  /ANN
-}
-  def
+                  exch
+                repeat
+                pdf.currentrect
+                dup
+                  pdf.outerbox 0 get
+                  pdf.linkmargin sub
+                  0 exch put
+                dup dup
+                  1 get
+                  pdf.baselineskip add
+                  1 exch put
+                dup dup
+                  3 get
+                  pdf.baselineskip add
+                  3 exch put
+                dup 2 index 2 get  2 exch put
+                /pdf.currentrect exch def
+                pdf.breaklink.write
+                SDict /pdf.pdfmark.good false put
+                exit
+              }
+              { pdf.count 2 sub /pdf.count exch def }
+            ifelse
+          }
+        loop
+      }
+    if
+    /ANN
+  }
+    def
 /pdf.breaklink.write
   {
     counttomark 1 sub
@@ -470,7 +470,7 @@ false setglobal
 
 %%EndProcSet
 %%BeginProcSet: pstricks.pro 0 0
-% $Id: pstricks.pro 317 2021-11-16 20:47:25Z herbert $
+% $Id: pstricks.pro 615 2022-09-22 08:39:26Z herbert $
 %
 %% PostScript prologue for pstricks.tex.
 %% Version 1.41, 2021/11/16
@@ -851,7 +851,7 @@ tx@Dict begin
 %
 %
 /TruchetFill { %	 on stack: scaling factor
-  10 dict begin
+  20 dict begin
   dup dup scale
   1 exch div round /penroseFactor ED 
   a 0 dtransform round exch round exch
@@ -917,7 +917,11 @@ tx@Dict begin
   { 0 h T 1 -1 scale } if 
   w neg h moveto 
   0 0 L w h L w neg a neg rlineto 
-  gsave fill grestore 
+  gsave 
+%  gsave w neg h lineto CLW 0.5 add setlinewidth  % test für border beim Pfeil
+%  1 setgray 0 setlinejoin closepath stroke 
+%  grestore  
+  fill grestore 
 } def
 %
 /ArrowD { % the sides are drawn as curves (hv 20071211)
@@ -1423,8 +1427,8 @@ tx@Dict begin
     } ifelse 
 } def
 %
-/Frame { 
-  CLW mul /a ED 
+/Frame { %  on  stack \psk@dimen
+  CLW mul /a ED % save radius
   3 -1 roll 
   2 copy gt { exch } if 
   a sub /y2 ED 
@@ -2859,10 +2863,10 @@ end
 
 %%EndProcSet
 %%BeginProcSet: pst-dots.pro 0 0
-% $Id: pst-dots.pro 291 2021-10-01 09:22:45Z herbert $
+% $Id: pst-dots.pro 601 2022-09-08 19:21:27Z herbert $
 %
 %% PostScript prologue for pstricks.tex.
-%% Version 0.02,  2021/10/01
+%% Version 2.02,  2021/10/01
 %%
 %% For distribution, see pstricks.tex.
 %%
@@ -3954,7 +3958,7 @@ end % of tx@3Ddict
       add					% build the sum
     } for
     Pi 2 mul sqrt z div mul
-    z 5.5 add z 0.5 add exp mul ENeperian z 5.5 add neg exp mul 
+    z 5.5 add z 0.5 add Power mul ENeperian z 5.5 add neg Power mul % Power is controlled exp
   end } bind def
 %    
 /GAMMALN {dup dup dup 5.5 add dup ln 3 -1 roll .5 add mul sub neg 1.000000000190015
@@ -7673,46 +7677,47 @@ tx@Dict begin  gsave STV CP T /ps@rot 0 def grestore  end
 tx@Dict begin  gsave STV CP T /ps@refangle 0.  def grestore  end
  -128
 62 a -128 62 a
-0.8 setlinewidth 0 setgray
- -128 62 a -128 62 a
 tx@Dict begin  gsave STV CP T /ps@rot 0 def grestore  end
- -128 62 a 0 TeXcolorgray
-0 TeXcolorgray 1661 281 a Fl(p)p 1867 281 233 9 v 1867
-510 a
+ -128 62 a 0 TeXcolorgray 0 TeXcolorgray
+1661 281 a Fl(p)p 1867 281 233 9 v 1867 510 a
  currentpoint currentpoint translate 2.1 2.1 scale neg exch neg exch
 translate
- 1867 510 a Fk(\034)1867 510 y
+ 1867 510
+a Fk(\034)1867 510 y
  currentpoint currentpoint translate 1 2.1 div 1 2.1 div scale neg
 exch neg exch translate
- 1867 510 a 478 792
-a Fj(T)-11 b(r\034ndelagk)l(onkurranse)42 b(2026)g(-)i(Lev)l(el)f(I)t
-(I)g(-)h(Solutions)1338 991 y(First)f(round)h(-)f(26.09)1654
-1174 y(1st)g(part)-128 1722 y Fi(Cho)s(ose)c(and)f(solv)m(e)g(only)g
-(one)g(of)f(the)h(follo)m(wing)g(problems:)-128 2090
-y(Problem)g(1)-128 2310 y Fh(The)29 b(\014gure)g(sho)m(ws)g(an)f
-(equilateral)h(triangle)f(of)g(side)-128 2431 y(1,)51
-b(and)c(three)g(in)m(ternal)h(squares)h(tangen)m(t)e(to)f(the)-128
-2551 y(base)25 b(of)e(the)h(triangle)f(and)h(to)f(eac)m(h)i(other)f(as)
-f(sho)m(wn.)-128 2671 y(The)48 b(resp)s(ectiv)m(e)h(sides)f(of)e(the)g
-(squares)i(are)f Fg(a;)17 b Fh(2)p Fg(a)-128 2792 y Fh(and)29
-b(3)p Fg(a)p Fh(,)h(and)e(as)h(sho)m(wn,)i(the)e(smallest)h(and)e
-(largest)-128 2912 y(squares)39 b(eac)m(h)e(touc)m(h)g(one)g
-(additional)f(side)i(with)f(a)-128 3033 y(v)m(ertex.)46
-b(Kno)m(wing)33 b(that)f Fg(a)h Fh(can)g(b)s(e)g(expressed)i(as)539
-3262 y Fg(a)28 b Fh(=)731 3194 y Fg(A)22 b Fh(+)g Fg(B)1003
-3112 y Ff(p)p 1087 3112 49 4 v 1087 3194 a Fh(3)p 731
-3239 405 4 v 895 3330 a Fg(C)1145 3262 y(;)-128 3451
-y Fh(with)54 b Fg(A;)17 b(B)5 b(;)17 b(C)68 b Ff(2)62
-b Fe(N)53 b Fh(and)f(the)i(expression)g(is)g(as)-128
-3571 y(reduced)i(as)f(p)s(ossible,)61 b(determine)56
-b(the)f(v)-5 b(alue)54 b(of)-128 3692 y Fg(A)23 b Fh(+)f
-Fg(B)27 b Fh(+)22 b Fg(C)7 b Fh(.)p 0 TeXcolorgray 0
-TeXcolorgray 0 TeXcolorgray 0 TeXcolorgray 2185 3652
-a
+ 1867 510 a 478 792 a Fj(T)-11 b(r\034ndelagk)l
+(onkurranse)42 b(2026)g(-)i(Lev)l(el)f(I)t(I)g(-)h(Solutions)1338
+991 y(First)f(round)h(-)f(26.09)1654 1174 y(1st)g(part)-128
+1722 y Fi(Cho)s(ose)c(and)f(solv)m(e)g(only)g(one)g(of)f(the)h(follo)m
+(wing)g(problems:)-128 2090 y(Problem)g(1)-128 2310 y
+Fh(The)29 b(\014gure)g(sho)m(ws)g(an)f(equilateral)h(triangle)f(of)g
+(side)-128 2431 y(1,)51 b(and)c(three)g(in)m(ternal)h(squares)h(tangen)
+m(t)e(to)f(the)-128 2551 y(base)25 b(of)e(the)h(triangle)f(and)h(to)f
+(eac)m(h)i(other)f(as)f(sho)m(wn.)-128 2671 y(The)48
+b(resp)s(ectiv)m(e)h(sides)f(of)e(the)g(squares)i(are)f
+Fg(a;)17 b Fh(2)p Fg(a)-128 2792 y Fh(and)29 b(3)p Fg(a)p
+Fh(,)h(and)e(as)h(sho)m(wn,)i(the)e(smallest)h(and)e(largest)-128
+2912 y(squares)39 b(eac)m(h)e(touc)m(h)g(one)g(additional)f(side)i
+(with)f(a)-128 3033 y(v)m(ertex.)46 b(Kno)m(wing)33 b(that)f
+Fg(a)h Fh(can)g(b)s(e)g(expressed)i(as)539 3262 y Fg(a)28
+b Fh(=)731 3194 y Fg(A)22 b Fh(+)g Fg(B)1003 3112 y Ff(p)p
+1087 3112 49 4 v 1087 3194 a Fh(3)p 731 3239 405 4 v
+895 3330 a Fg(C)1145 3262 y(;)-128 3451 y Fh(with)54
+b Fg(A;)17 b(B)5 b(;)17 b(C)68 b Ff(2)62 b Fe(N)53 b
+Fh(and)f(the)i(expression)g(is)g(as)-128 3571 y(reduced)i(as)f(p)s
+(ossible,)61 b(determine)56 b(the)f(v)-5 b(alue)54 b(of)-128
+3692 y Fg(A)23 b Fh(+)f Fg(B)27 b Fh(+)22 b Fg(C)7 b
+Fh(.)p 0 TeXcolorgray 0 TeXcolorgray 1922 2211 a
+/xCanvasLeft -2.84544 def /yCanvasLeft -2.84544 def /xCanvasRight 170.71646
+def /yCanvasRight 170.71646 def
+ 1922
+2211 a 0 TeXcolorgray 0 TeXcolorgray 2185 3652 a
 tx@Dict begin  CM STV CP T newpath /a 0.0 def /w 173.5619 a add def
 /d 0.0 a add neg def /h 173.5619 a add def a neg d moveto a neg h L
 w h L w d L closepath clip newpath 0 0 moveto setmatrix end
- 2185 3652 a 2208 3628 a @beginspecial @setspecial
+ 2185
+3652 a 2208 3628 a @beginspecial @setspecial
   tx@Dict begin STP newpath /ArrowA { moveto } def /ArrowB { } def
 /ArrowInside { } def  0.8 SLW 1 0.06276 0.9412  setrgbcolor  [ 32.40485
 0.0 32.40485 20.54288 11.83635 20.54288 11.83635 0.0  /Lineto /lineto
@@ -7943,12 +7948,15 @@ y(First)f(round)h(-)f(26.09)1632 1174 y(2nd)h(part)-128
 1722 y Fh(Bianca)28 b(prop)s(oses)g(the)g(follo)m(wing)f(problem)h(to)f
 (Nils,)j(she)e(constructs)h(a)e(big)g(triangular)g(arra)m(y)g(of)g(n)m
 (um)m(b)s(ers)-128 1842 y(as)33 b(sho)m(wn)h(b)s(elo)m(w)p
-0 TeXcolorgray 1455 2785 a
+0 TeXcolorgray -128 1958 a
+/xCanvasLeft -8.5359 def /yCanvasLeft -11.38092 def /xCanvasRight 93.89413
+def /yCanvasRight 88.20367 def
+ -128 1958 a 1455 2785 a
 tx@Dict begin  CM STV CP T newpath /a 0.0 def /w 102.43004 a add def
 /d 0.0 a add neg def /h 99.5846 a add def a neg d moveto a neg h L
 w h L w d L closepath clip newpath 0 0 moveto setmatrix end
- 1455 2785 a 1526 2690 a @beginspecial
-@setspecial
+ 1455
+2785 a 1526 2690 a @beginspecial @setspecial
   tx@Dict begin STP newpath /ArrowA { moveto } def /ArrowB { } def
 /ArrowInside { } def  0.8 SLW 0.5  setgray  /ArrowA { moveto } def
 /ArrowB { } def /ArrowInside { } def  [ 42.67911 76.82231 -14.22636
@@ -7970,7 +7978,8 @@ if   gsave 0.8 SLW 0.5  setgray  0.6 revision 952 gt { .setstrokeconstantalpha
 }{ .setopacityalpha } ifelse   0  setlinejoin 0  setlinecap stroke
  grestore end
  
-@endspecial @beginspecial @setspecial
+@endspecial
+@beginspecial @setspecial
   tx@Dict begin STP newpath /ArrowA { moveto } def /ArrowB { } def
 /ArrowInside { } def  0.8 SLW 0.5  setgray  /ArrowA { moveto } def
 /ArrowB { } def /ArrowInside { } def  [ 56.90549 51.21501 14.22636
@@ -7992,8 +8001,8 @@ if   gsave 0.8 SLW 0.5  setgray  0.6 revision 952 gt { .setstrokeconstantalpha
 }{ .setopacityalpha } ifelse   0  setlinejoin 0  setlinecap stroke
  grestore end
  
-@endspecial
-@beginspecial @setspecial
+@endspecial @beginspecial
+@setspecial
   tx@Dict begin STP newpath /ArrowA { moveto } def /ArrowB { } def
 /ArrowInside { } def  0.8 SLW 0.5  setgray  /ArrowA { moveto } def
 /ArrowB { } def /ArrowInside { } def  [ 71.13185 25.60728 42.67911
@@ -8015,8 +8024,7 @@ if   gsave 0.8 SLW 0.5  setgray  0.6 revision 952 gt { .setstrokeconstantalpha
 }{ .setopacityalpha } ifelse   0  setlinejoin 0  setlinecap stroke
  grestore end
  
-@endspecial @beginspecial
-@setspecial
+@endspecial @beginspecial @setspecial
   tx@Dict begin STP newpath /ArrowA { moveto } def /ArrowB { } def
 /ArrowInside { } def  0.8 SLW 0.5  setgray  /ArrowA { moveto } def
 /ArrowB { } def /ArrowInside { } def  [ 85.35823 0.0 0.0 0.0   /Lineto
@@ -8037,7 +8045,8 @@ pop pop Lineto } repeat }{ ArrowA /n n 2 sub def n { Lineto } repeat
  0.6 revision 952 gt { .setstrokeconstantalpha }{ .setopacityalpha
 } ifelse   0  setlinejoin 0  setlinecap stroke  grestore end
  
-@endspecial @beginspecial @setspecial
+@endspecial
+@beginspecial @setspecial
   tx@Dict begin STP newpath /ArrowA { moveto } def /ArrowB { } def
 /ArrowInside { } def  0.8 SLW 0.5  setgray  /ArrowA { moveto } def
 /ArrowB { } def /ArrowInside { } def  [ 71.13185 25.60728 14.22636
@@ -8059,11 +8068,56 @@ if   gsave 0.8 SLW 0.5  setgray  0.6 revision 952 gt { .setstrokeconstantalpha
 }{ .setopacityalpha } ifelse   0  setlinejoin 0  setlinecap stroke
  grestore end
  
+@endspecial @beginspecial
+@setspecial
+  tx@Dict begin STP newpath /ArrowA { moveto } def /ArrowB { } def
+/ArrowInside { } def  0.8 SLW 0.5  setgray  /ArrowA { moveto } def
+/ArrowB { } def /ArrowInside { } def  [ 56.90549 51.21501 28.45274
+51.21501   /Lineto /lineto load def 0  setlinejoin false  NArray n
+0 eq not { n 1 eq { 0 0 /n 2 def } if () length 0 gt { 1.5 2.  CLW
+mul add dup 1.4  mul exch 0.4 mul neg add /arrowlength exch def 4 copy
+/y1 ED /x1 ED /y2 ED /x2 ED /Alpha y2 y1 sub x2 x1 sub Atan def ArrowA
+x1 Alpha cos arrowlength mul add y1 Alpha sin arrowlength mul add /n
+n 1 sub def n { 4 copy /y1 ED /x1 ED /y2 ED /x2 ED x1 y1 0.5  1 gt
+{ /Alpha y2 y1 sub x2 x1 sub Atan def /ArrowPos 0.  def /dArrowPos
+0.5  abs def 1.  cvi { /ArrowPos ArrowPos dArrowPos add def x1 Alpha
+cos ArrowPos mul add y1 Alpha sin ArrowPos mul add ArrowInside pop
+pop } repeat }{ /ArrowPos 0.  def /dArrowPos 1. 1 gt {1.0 1. 1.0 add
+div }{0.5 } ifelse def 1.  cvi { /ArrowPos ArrowPos dArrowPos add def
+x2 x1 sub ArrowPos mul x1 add y2 y1 sub ArrowPos mul y1 add ArrowInside
+pop pop } repeat } ifelse pop pop Lineto } repeat }{ ArrowA /n n 2
+sub def n { Lineto } repeat } ifelse CP 4 2 roll ArrowB L pop pop }
+if   gsave 0.8 SLW 0.5  setgray  0.6 revision 952 gt { .setstrokeconstantalpha
+}{ .setopacityalpha } ifelse   0  setlinejoin 0  setlinecap stroke
+ grestore end
+ 
+@endspecial @beginspecial @setspecial
+  tx@Dict begin STP newpath /ArrowA { moveto } def /ArrowB { } def
+/ArrowInside { } def  0.8 SLW 0.5  setgray  /ArrowA { moveto } def
+/ArrowB { } def /ArrowInside { } def  [ 42.67911 -25.60728 14.22636
+25.60728   /Lineto /lineto load def 0  setlinejoin false  NArray n
+0 eq not { n 1 eq { 0 0 /n 2 def } if () length 0 gt { 1.5 2.  CLW
+mul add dup 1.4  mul exch 0.4 mul neg add /arrowlength exch def 4 copy
+/y1 ED /x1 ED /y2 ED /x2 ED /Alpha y2 y1 sub x2 x1 sub Atan def ArrowA
+x1 Alpha cos arrowlength mul add y1 Alpha sin arrowlength mul add /n
+n 1 sub def n { 4 copy /y1 ED /x1 ED /y2 ED /x2 ED x1 y1 0.5  1 gt
+{ /Alpha y2 y1 sub x2 x1 sub Atan def /ArrowPos 0.  def /dArrowPos
+0.5  abs def 1.  cvi { /ArrowPos ArrowPos dArrowPos add def x1 Alpha
+cos ArrowPos mul add y1 Alpha sin ArrowPos mul add ArrowInside pop
+pop } repeat }{ /ArrowPos 0.  def /dArrowPos 1. 1 gt {1.0 1. 1.0 add
+div }{0.5 } ifelse def 1.  cvi { /ArrowPos ArrowPos dArrowPos add def
+x2 x1 sub ArrowPos mul x1 add y2 y1 sub ArrowPos mul y1 add ArrowInside
+pop pop } repeat } ifelse pop pop Lineto } repeat }{ ArrowA /n n 2
+sub def n { Lineto } repeat } ifelse CP 4 2 roll ArrowB L pop pop }
+if   gsave 0.8 SLW 0.5  setgray  0.6 revision 952 gt { .setstrokeconstantalpha
+}{ .setopacityalpha } ifelse   0  setlinejoin 0  setlinecap stroke
+ grestore end
+ 
 @endspecial
 @beginspecial @setspecial
   tx@Dict begin STP newpath /ArrowA { moveto } def /ArrowB { } def
 /ArrowInside { } def  0.8 SLW 0.5  setgray  /ArrowA { moveto } def
-/ArrowB { } def /ArrowInside { } def  [ 56.90549 51.21501 28.45274
+/ArrowB { } def /ArrowInside { } def  [ 71.13185 -25.60728 28.45274
 51.21501   /Lineto /lineto load def 0  setlinejoin false  NArray n
 0 eq not { n 1 eq { 0 0 /n 2 def } if () length 0 gt { 1.5 2.  CLW
 mul add dup 1.4  mul exch 0.4 mul neg add /arrowlength exch def 4 copy
@@ -8086,51 +8140,6 @@ if   gsave 0.8 SLW 0.5  setgray  0.6 revision 952 gt { .setstrokeconstantalpha
 @setspecial
   tx@Dict begin STP newpath /ArrowA { moveto } def /ArrowB { } def
 /ArrowInside { } def  0.8 SLW 0.5  setgray  /ArrowA { moveto } def
-/ArrowB { } def /ArrowInside { } def  [ 42.67911 -25.60728 14.22636
-25.60728   /Lineto /lineto load def 0  setlinejoin false  NArray n
-0 eq not { n 1 eq { 0 0 /n 2 def } if () length 0 gt { 1.5 2.  CLW
-mul add dup 1.4  mul exch 0.4 mul neg add /arrowlength exch def 4 copy
-/y1 ED /x1 ED /y2 ED /x2 ED /Alpha y2 y1 sub x2 x1 sub Atan def ArrowA
-x1 Alpha cos arrowlength mul add y1 Alpha sin arrowlength mul add /n
-n 1 sub def n { 4 copy /y1 ED /x1 ED /y2 ED /x2 ED x1 y1 0.5  1 gt
-{ /Alpha y2 y1 sub x2 x1 sub Atan def /ArrowPos 0.  def /dArrowPos
-0.5  abs def 1.  cvi { /ArrowPos ArrowPos dArrowPos add def x1 Alpha
-cos ArrowPos mul add y1 Alpha sin ArrowPos mul add ArrowInside pop
-pop } repeat }{ /ArrowPos 0.  def /dArrowPos 1. 1 gt {1.0 1. 1.0 add
-div }{0.5 } ifelse def 1.  cvi { /ArrowPos ArrowPos dArrowPos add def
-x2 x1 sub ArrowPos mul x1 add y2 y1 sub ArrowPos mul y1 add ArrowInside
-pop pop } repeat } ifelse pop pop Lineto } repeat }{ ArrowA /n n 2
-sub def n { Lineto } repeat } ifelse CP 4 2 roll ArrowB L pop pop }
-if   gsave 0.8 SLW 0.5  setgray  0.6 revision 952 gt { .setstrokeconstantalpha
-}{ .setopacityalpha } ifelse   0  setlinejoin 0  setlinecap stroke
- grestore end
- 
-@endspecial @beginspecial @setspecial
-  tx@Dict begin STP newpath /ArrowA { moveto } def /ArrowB { } def
-/ArrowInside { } def  0.8 SLW 0.5  setgray  /ArrowA { moveto } def
-/ArrowB { } def /ArrowInside { } def  [ 71.13185 -25.60728 28.45274
-51.21501   /Lineto /lineto load def 0  setlinejoin false  NArray n
-0 eq not { n 1 eq { 0 0 /n 2 def } if () length 0 gt { 1.5 2.  CLW
-mul add dup 1.4  mul exch 0.4 mul neg add /arrowlength exch def 4 copy
-/y1 ED /x1 ED /y2 ED /x2 ED /Alpha y2 y1 sub x2 x1 sub Atan def ArrowA
-x1 Alpha cos arrowlength mul add y1 Alpha sin arrowlength mul add /n
-n 1 sub def n { 4 copy /y1 ED /x1 ED /y2 ED /x2 ED x1 y1 0.5  1 gt
-{ /Alpha y2 y1 sub x2 x1 sub Atan def /ArrowPos 0.  def /dArrowPos
-0.5  abs def 1.  cvi { /ArrowPos ArrowPos dArrowPos add def x1 Alpha
-cos ArrowPos mul add y1 Alpha sin ArrowPos mul add ArrowInside pop
-pop } repeat }{ /ArrowPos 0.  def /dArrowPos 1. 1 gt {1.0 1. 1.0 add
-div }{0.5 } ifelse def 1.  cvi { /ArrowPos ArrowPos dArrowPos add def
-x2 x1 sub ArrowPos mul x1 add y2 y1 sub ArrowPos mul y1 add ArrowInside
-pop pop } repeat } ifelse pop pop Lineto } repeat }{ ArrowA /n n 2
-sub def n { Lineto } repeat } ifelse CP 4 2 roll ArrowB L pop pop }
-if   gsave 0.8 SLW 0.5  setgray  0.6 revision 952 gt { .setstrokeconstantalpha
-}{ .setopacityalpha } ifelse   0  setlinejoin 0  setlinecap stroke
- grestore end
- 
-@endspecial
-@beginspecial @setspecial
-  tx@Dict begin STP newpath /ArrowA { moveto } def /ArrowB { } def
-/ArrowInside { } def  0.8 SLW 0.5  setgray  /ArrowA { moveto } def
 /ArrowB { } def /ArrowInside { } def  [ 99.5846 -25.60728 42.67911
 76.82231   /Lineto /lineto load def 0  setlinejoin false  NArray n
 0 eq not { n 1 eq { 0 0 /n 2 def } if () length 0 gt { 1.5 2.  CLW
@@ -8150,24 +8159,24 @@ if   gsave 0.8 SLW 0.5  setgray  0.6 revision 952 gt { .setstrokeconstantalpha
 }{ .setopacityalpha } ifelse   0  setlinejoin 0  setlinecap stroke
  grestore end
  
-@endspecial 1880 2053 a Fg(a)1762
-2265 y(b)195 b(c)1644 2478 y(d)185 b(e)192 b(f)1526 2624
-y Fh(.)1526 2657 y(.)1526 2690 y(.)1762 2624 y(.)1762
-2657 y(.)1762 2690 y(.)1998 2624 y(.)1998 2657 y(.)1998
-2690 y(.)2235 2624 y(.)2235 2657 y(.)2235 2690 y(.)2306
-2785 y
+@endspecial 1880 2053 a Fg(a)1762 2265 y(b)195
+b(c)1644 2478 y(d)185 b(e)192 b(f)1526 2624 y Fh(.)1526
+2657 y(.)1526 2690 y(.)1762 2624 y(.)1762 2657 y(.)1762
+2690 y(.)1998 2624 y(.)1998 2657 y(.)1998 2690 y(.)2235
+2624 y(.)2235 2657 y(.)2235 2690 y(.)2306 2785 y
 currentpoint initclip moveto
- 2306 2785 a 0 TeXcolorgray -128 3022 a Fh(suc)m(h)38
-b(that)e(the)g(p)s(ossible)h(v)-5 b(alues)37 b(of)e Fg(a;)17
-b(b;)g(c;)36 b Fh(and)g(so)h(on)e(are)h Ff(\000)p Fh(1)p
-Fg(;)17 b Fh(0)36 b(and)g(1.)53 b(She)37 b(\014rst)f(c)m(ho)s(oses)i
-(one)e(v)-5 b(alue)-128 3142 y(for)32 b Fg(a)p Fh(,)h(and)g(then)g
-(randomly)g(assigns)h(v)-5 b(alues)34 b(making)f(sure)g(that)g(no)f(t)m
-(w)m(o)h(adjacen)m(t)h(v)-5 b(alues)33 b(are)g(equal.)-128
-3345 y Fi(T)-9 b(ask)33 b(1:)41 b Fh(If)28 b(the)g(b)s(ottom)f(of)g
-(the)i(arra)m(y)f(has)g(101)f(n)m(um)m(b)s(ers,)j(determine)g(the)e
-(maxim)m(um)i(v)-5 b(alue)28 b(of)f(the)h(sum)-128 3466
-y(of)33 b(all)f(the)h(v)-5 b(alues)34 b(in)e(the)h(arra)m(y)-8
+ 2306
+2785 a 0 TeXcolorgray -128 3022 a Fh(suc)m(h)38 b(that)e(the)g(p)s
+(ossible)h(v)-5 b(alues)37 b(of)e Fg(a;)17 b(b;)g(c;)36
+b Fh(and)g(so)h(on)e(are)h Ff(\000)p Fh(1)p Fg(;)17 b
+Fh(0)36 b(and)g(1.)53 b(She)37 b(\014rst)f(c)m(ho)s(oses)i(one)e(v)-5
+b(alue)-128 3142 y(for)32 b Fg(a)p Fh(,)h(and)g(then)g(randomly)g
+(assigns)h(v)-5 b(alues)34 b(making)f(sure)g(that)g(no)f(t)m(w)m(o)h
+(adjacen)m(t)h(v)-5 b(alues)33 b(are)g(equal.)-128 3345
+y Fi(T)-9 b(ask)33 b(1:)41 b Fh(If)28 b(the)g(b)s(ottom)f(of)g(the)i
+(arra)m(y)f(has)g(101)f(n)m(um)m(b)s(ers,)j(determine)g(the)e(maxim)m
+(um)i(v)-5 b(alue)28 b(of)f(the)h(sum)-128 3466 y(of)33
+b(all)f(the)h(v)-5 b(alues)34 b(in)e(the)h(arra)m(y)-8
 b(.)-128 3669 y Fi(T)f(ask)41 b(2:)47 b Fh(If)35 b(the)g(b)s(ottom)f
 (of)g(the)h(arra)m(y)g(has)g(2025)f(n)m(um)m(b)s(ers,)j(sho)m(w)f(that)
 e(the)h(sum)h(of)e(all)g(the)h(v)-5 b(alues)36 b(in)-128
