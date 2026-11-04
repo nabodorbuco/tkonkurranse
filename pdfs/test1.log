@@ -1,7 +1,6 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=latex 2026.10.10)  20 OCT 2026 14:53
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2026.10.10)  4 NOV 2026 14:44
 entering extended mode
  restricted \write18 enabled.
- Source specials enabled.
  %&-line parsing enabled.
 **test1.tex
 (./test1.tex
@@ -12,14 +11,14 @@ Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
 File: size12.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
 )
-\c@part=\count187
-\c@section=\count188
-\c@subsection=\count189
-\c@subsubsection=\count190
-\c@paragraph=\count191
-\c@subparagraph=\count192
-\c@figure=\count193
-\c@table=\count194
+\c@part=\count183
+\c@section=\count184
+\c@subsection=\count185
+\c@subsubsection=\count186
+\c@paragraph=\count187
+\c@subparagraph=\count188
+\c@figure=\count189
+\c@table=\count190
 \abovecaptionskip=\skip48
 \belowcaptionskip=\skip49
 \bibindent=\dimen140
@@ -28,8 +27,11 @@ File: size12.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
 Package: inputenc 2021/02/14 v1.3d Input encoding file
 \inpenc@prehook=\toks17
 \inpenc@posthook=\toks18
-)
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
@@ -61,14 +63,14 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count195
+\inf@bad=\count191
 LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count196
-\leftroot@=\count197
+\uproot@=\count192
+\leftroot@=\count193
 LaTeX Info: Redefining \overline on input line 399.
 LaTeX Info: Redefining \colon on input line 410.
-\classnum@=\count198
-\DOTSCASE@=\count199
+\classnum@=\count194
+\DOTSCASE@=\count195
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
@@ -81,20 +83,20 @@ LaTeX Info: Redefining \Bigg on input line 725.
 \big@size=\dimen143
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count266
+\macc@depth=\count196
 LaTeX Info: Redefining \bmod on input line 905.
 LaTeX Info: Redefining \pmod on input line 910.
 LaTeX Info: Redefining \smash on input line 940.
 LaTeX Info: Redefining \relbar on input line 970.
 LaTeX Info: Redefining \Relbar on input line 971.
-\c@MaxMatrixCols=\count267
+\c@MaxMatrixCols=\count197
 \dotsspace@=\muskip16
-\c@parentequation=\count268
-\dspbrk@lvl=\count269
+\c@parentequation=\count198
+\dspbrk@lvl=\count199
 \tag@help=\toks21
-\row@=\count270
-\column@=\count271
-\maxfields@=\count272
+\row@=\count266
+\column@=\count267
+\maxfields@=\count268
 \andhelp@=\toks22
 \eqnshift@=\dimen144
 \alignsep@=\dimen145
@@ -125,10 +127,10 @@ Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
 (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: dvips.def on input line 107.
+Package graphics Info: Driver file: xetex.def on input line 107.
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/dvips.def
-File: dvips.def 2022/09/22 v3.1e Graphics/color driver for dvips
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/xetex.def
+File: xetex.def 2022/09/22 v5.0n Graphics/color driver for xetex
 ))
 \Gin@req@height=\dimen150
 \Gin@req@width=\dimen151
@@ -138,22 +140,20 @@ File: dvips.def 2022/09/22 v3.1e Graphics/color driver for dvips
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
 Package: expl3 2024-01-22 L3 programming layer (loader) 
 
-(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-dvips.def
-File: l3backend-dvips.def 2024-01-04 L3 backend support: dvips
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
+File: l3backend-xetex.def 2024-01-04 L3 backend support: XeTeX
+\g__graphics_track_int=\count269
 \l__pdf_internal_box=\box53
-\g__pdf_backend_object_int=\count273
-\l__pdf_backend_content_box=\box54
-\l__pdf_backend_model_box=\box55
-\g__pdf_backend_annotation_int=\count274
-\g__pdf_backend_link_int=\count275
-\g__pdf_backend_link_sf_int=\count276
+\g__pdf_backend_object_int=\count270
+\g__pdf_backend_annotation_int=\count271
+\g__pdf_backend_link_int=\count272
 ))
 Package: l3keys2e 2023-10-10 LaTeX2e option processing using LaTeX3 keys
 )
 Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
-\g__lipsum_par_int=\count277
-\l__lipsum_a_int=\count278
-\l__lipsum_b_int=\count279
+\g__lipsum_par_int=\count273
+\l__lipsum_a_int=\count274
+\l__lipsum_b_int=\count275
 
 (/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex))
 (/usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty
@@ -161,21 +161,21 @@ Package: mathtools 2022/06/29 v1.29 mathematical typesetting tools
 
 (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count280
-\calc@Bcount=\count281
+\calc@Acount=\count276
+\calc@Bcount=\count277
 \calc@Adimen=\dimen152
 \calc@Bdimen=\dimen153
 \calc@Askip=\skip53
 \calc@Bskip=\skip54
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count282
+\calc@Ccount=\count278
 \calc@Cskip=\skip55
 )
 (/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty
 Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 )
-\g_MT_multlinerow_int=\count283
+\g_MT_multlinerow_int=\count279
 \l_MT_multwidth_dim=\dimen154
 \origjot=\skip56
 \l_MT_shortvdotswithinadjustabove_dim=\dimen155
@@ -184,7 +184,7 @@ Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 \l_MT_below_intertext_sep=\dimen158
 \l_MT_above_shortintertext_sep=\dimen159
 \l_MT_below_shortintertext_sep=\dimen160
-\xmathstrut@box=\box56
+\xmathstrut@box=\box54
 \xmathstrut@dim=\dimen161
 )
 (/usr/share/texlive/texmf-dist/tex/latex/pstricks/pstricks.sty
@@ -199,7 +199,7 @@ Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
 (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package xcolor Info: Driver file: dvips.def on input line 274.
+Package xcolor Info: Driver file: xetex.def on input line 274.
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1350.
@@ -222,21 +222,21 @@ Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
 \XKV@toks=\toks26
 \XKV@tempa@toks=\toks27
 )
-\XKV@depth=\count284
+\XKV@depth=\count280
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 )))
 (/usr/share/texlive/texmf-dist/tex/generic/pstricks/pstricks.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pstricks/pst-fp.tex
 `pst-fp' v0.06, 2020/11/20 (hv)
-\pstFP@xs=\count285
-\pstFP@xia=\count286
-\pstFP@xib=\count287
-\pstFP@xfa=\count288
-\pstFP@xfb=\count289
-\pstFP@rega=\count290
-\pstFP@regb=\count291
-\pstFP@regs=\count292
-\pstFP@times=\count293
+\pstFP@xs=\count281
+\pstFP@xia=\count282
+\pstFP@xib=\count283
+\pstFP@xfa=\count284
+\pstFP@xfb=\count285
+\pstFP@rega=\count286
+\pstFP@regb=\count287
+\pstFP@regs=\count288
+\pstFP@times=\count289
 )
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
@@ -246,7 +246,7 @@ File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 \pgfutil@tempdimb=\dimen163
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box57
+\pgfutil@abb=\box55
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/pgf.revision.tex)
@@ -271,15 +271,15 @@ Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
 \pgf@ya=\dimen169
 \pgf@yb=\dimen170
 \pgf@yc=\dimen171
-\c@pgf@counta=\count294
-\c@pgf@countb=\count295
-\c@pgf@countc=\count296
-\c@pgf@countd=\count297
+\c@pgf@counta=\count290
+\c@pgf@countb=\count291
+\c@pgf@countc=\count292
+\c@pgf@countd=\count293
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen172
-\pgfmath@count=\count298
-\pgfmath@box=\box58
+\pgfmath@count=\count294
+\pgfmath@box=\box56
 \pgfmath@toks=\toks32
 \pgfmath@stack@operand=\toks33
 \pgfmath@stack@operation=\toks34
@@ -303,7 +303,7 @@ tex)
 thmetics.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count299
+\c@pgfmathroundto@lastzeros=\count295
 )))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
 Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
@@ -312,7 +312,7 @@ Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
 \pgffor@stack=\toks35
 \pgffor@toks=\toks36
 ))
-\psLoopIndex=\count300
+\psLoopIndex=\count296
 
 `PSTricks' v3.19c  <2024/02/02> (tvz,hv)
 \pst@dima=\dimen175
@@ -325,28 +325,29 @@ Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
 \pst@dimn=\dimen182
 \pst@dimo=\dimen183
 \pst@dimp=\dimen184
-\pst@hbox=\box59
-\pst@ibox=\box60
-\pst@boxg=\box61
-\pst@cnta=\count301
-\pst@cntb=\count302
-\pst@cntc=\count303
-\pst@cntd=\count304
-\pst@cntg=\count305
-\pst@cnth=\count306
-\pst@cntm=\count307
-\pst@cntn=\count308
-\pst@cnto=\count309
-\pst@cntp=\count310
-\@zero=\count311
+\pst@hbox=\box57
+\pst@ibox=\box58
+\pst@boxg=\box59
+\pst@cnta=\count297
+\pst@cntb=\count298
+\pst@cntc=\count299
+\pst@cntd=\count300
+\pst@cntg=\count301
+\pst@cnth=\count302
+\pst@cntm=\count303
+\pst@cntn=\count304
+\pst@cnto=\count305
+\pst@cntp=\count306
+\@zero=\count307
 \pst@toks=\toks37
 --- We are running latex or xelatex ---
-(/usr/share/texlive/texmf-dist/tex/generic/pstricks/pstricks.con)
+(/usr/share/texlive/texmf-dist/tex/xelatex/xetex-pstricks/pstricks.con
+(/usr/share/texlive/texmf-dist/tex/generic/pstricks/config/xdvipdfmx.cfg))
 (/usr/share/texlive/texmf-dist/tex/generic/pstricks/pstricks-color.tex)
 \psunit=\dimen185
 \psxunit=\dimen186
 \psyunit=\dimen187
-\pst@C@@rType=\count312
+\pst@C@@rType=\count308
 \pslinewidth=\dimen188
 \psk@startLW=\dimen189
 \psk@endLW=\dimen190
@@ -368,15 +369,19 @@ Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
 \sh@wgridXunit=\dimen199
 \sh@wgridYunit=\dimen256
 \pst@shift=\dimen257
-\ps@imagectr=\count313
+\ps@imagectr=\count309
 
-(/usr/share/texlive/texmf-dist/tex/generic/pstricks/pstricks.con))
+(/usr/share/texlive/texmf-dist/tex/xelatex/xetex-pstricks/pstricks.con
+(/usr/share/texlive/texmf-dist/tex/generic/pstricks/config/xdvipdfmx.cfg
+Using PSTricks configuration for LaTeX+dvipdfmx
+)))
 File: pstricks.tex 2024/02/02 v3.19c `PSTricks' (tvz,hv)
-
-(/usr/share/texlive/texmf-dist/tex/generic/pstricks/pst-fp.tex
+ (/usr/share/texlive/texmf-dist/tex/generic/pstricks/pst-fp.tex
 `pst-fp' v0.06, 2020/11/20 (hv))
 File: pst-fp.tex 2020/11/20 v0.06 `PST-fp' (hv)
-)
+
+>>> Loading XeTeX special macros
+(/usr/share/texlive/texmf-dist/tex/generic/pstricks/pstricks-xetex.def))
 (/usr/share/texlive/texmf-dist/tex/latex/pstricks-add/pstricks-add.sty
 (/usr/share/texlive/texmf-dist/tex/latex/pst-plot/pst-plot.sty
 Package: pst-plot 2011/06/05 v1.00 LaTeX wrapper for `pst-plot' (HV)
@@ -390,8 +395,8 @@ Package: multido 2004/05/17 package wrapper for PSTricks `multido.tex', (HV/RN)
 
 (/usr/share/texlive/texmf-dist/tex/generic/multido/multido.tex
  v1.42, 2010/05/14 <tvz>
-\multido@count=\count314
-\multidocount=\count315
+\multido@count=\count310
+\multidocount=\count311
 \multido@stuff=\toks40
 )
 File: multido.tex 2010/05/14 v1.42 `multido' (tvz,hv)
@@ -401,20 +406,20 @@ Package: pst-plot 2021/09/23 package wrapper for pst-plot.tex (hv)
 (/usr/share/texlive/texmf-dist/tex/generic/pst-plot/pst-plot.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pst-tools/pst-tools.tex
 `PST-tools' v0.12, 2021/09/23 (hv)
-\randomi=\count316
-\ranval=\count317
+\randomi=\count312
+\ranval=\count313
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pstricks-add/pstricks-add.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pst-node/pst-node.tex
  v1.43, 2022/01/31
-\psrow=\count318
-\pscol=\count319
-\psmatrixcnt=\count320
+\psrow=\count314
+\pscol=\count315
+\psmatrixcnt=\count316
 \psrowsep=\skip57
 \pscolsep=\skip58
-\pst@args=\count321
-\num@pts=\count322
-\pst@argcnt=\count323
+\pst@args=\count317
+\num@pts=\count318
+\pst@argcnt=\count319
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pst-arrow/pst-arrow.tex
 `pst-arrow' v0.05, 2021/11/16 (dr,hv))
@@ -423,20 +428,20 @@ Package: pst-plot 2021/09/23 package wrapper for pst-plot.tex (hv)
 (/usr/share/texlive/texmf-dist/tex/generic/pst-math/pst-math.tex
 `pst-math' v0.67 , (CJ,hv)) `pstricks-add' v3.94, 2023/04/17 (dr,hv)
 \psparallelogramsep=\dimen258
-\pst@cntC=\count324
-\pst@stepcount=\count325
+\pst@cntC=\count320
+\pst@stepcount=\count321
 \chart@ColorIndex=\dimen259
 \chart@ColorStep=\dimen260
 \pst@chartHeight=\dimen261
 \pst@chartStackDepth=\dimen262
 \pst@chartStackWidth=\dimen263
-\chart@Toggle=\count326
-\psVectorCtr=\count327
+\chart@Toggle=\count322
+\psVectorCtr=\count323
 )
  v1.94, 2022/11/21 (tvz,hv)
 \pstRadUnit=\dimen264
 \pstRadUnitInv=\dimen265
-\pst@linecnt=\count328
+\pst@linecnt=\count324
 \RCD@file=\read2
 \psxlabelsep=\dimen266
 \psylabelsep=\dimen267
@@ -447,7 +452,7 @@ Package: pst-plot 2021/09/23 package wrapper for pst-plot.tex (hv)
 \pst@yticksizeA=\dimen272
 \pst@yticksizeB=\dimen273
 \pst@yticksizeC=\dimen274
-\@digitcounter=\count329
+\@digitcounter=\count325
 \psk@llx=\dimen275
 \psk@lly=\dimen276
 \psk@urx=\dimen277
@@ -482,20 +487,20 @@ Package: xparse 2023-10-10 L3 Experimental document command parser
 )
 (/usr/share/texlive/texmf-dist/tex/latex/siunitx/siunitx.sty
 Package: siunitx 2024-01-25 v3.3.10 A comprehensive (SI) units package
-\l__siunitx_number_uncert_offset_int=\count330
-\l__siunitx_number_exponent_fixed_int=\count331
-\l__siunitx_number_min_decimal_int=\count332
-\l__siunitx_number_min_integer_int=\count333
-\l__siunitx_number_round_precision_int=\count334
-\l__siunitx_number_lower_threshold_int=\count335
-\l__siunitx_number_upper_threshold_int=\count336
-\l__siunitx_number_group_first_int=\count337
-\l__siunitx_number_group_size_int=\count338
-\l__siunitx_number_group_minimum_int=\count339
+\l__siunitx_number_uncert_offset_int=\count326
+\l__siunitx_number_exponent_fixed_int=\count327
+\l__siunitx_number_min_decimal_int=\count328
+\l__siunitx_number_min_integer_int=\count329
+\l__siunitx_number_round_precision_int=\count330
+\l__siunitx_number_lower_threshold_int=\count331
+\l__siunitx_number_upper_threshold_int=\count332
+\l__siunitx_number_group_first_int=\count333
+\l__siunitx_number_group_size_int=\count334
+\l__siunitx_number_group_minimum_int=\count335
 \l__siunitx_angle_tmp_dim=\dimen281
-\l__siunitx_angle_marker_box=\box62
-\l__siunitx_angle_unit_box=\box63
-\l__siunitx_compound_count_int=\count340
+\l__siunitx_angle_marker_box=\box60
+\l__siunitx_angle_unit_box=\box61
+\l__siunitx_compound_count_int=\count336
 
 (/usr/share/texlive/texmf-dist/tex/latex/translations/translations.sty
 Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages
@@ -503,7 +508,7 @@ Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages
 
 (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count341
+\etb@tempcnta=\count337
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
@@ -517,48 +522,48 @@ Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode is ignored in DVI mode.
+Package pdftexcmds Info: \pdfdraftmode not found.
 ))
-\l__siunitx_table_tmp_box=\box64
+\l__siunitx_table_tmp_box=\box62
 \l__siunitx_table_tmp_dim=\dimen282
 \l__siunitx_table_column_width_dim=\dimen283
-\l__siunitx_table_integer_box=\box65
-\l__siunitx_table_decimal_box=\box66
-\l__siunitx_table_uncert_box=\box67
-\l__siunitx_table_before_box=\box68
-\l__siunitx_table_after_box=\box69
+\l__siunitx_table_integer_box=\box63
+\l__siunitx_table_decimal_box=\box64
+\l__siunitx_table_uncert_box=\box65
+\l__siunitx_table_before_box=\box66
+\l__siunitx_table_after_box=\box67
 \l__siunitx_table_before_dim=\dimen284
 \l__siunitx_table_carry_dim=\dimen285
-\l__siunitx_unit_tmp_int=\count342
-\l__siunitx_unit_position_int=\count343
-\l__siunitx_unit_total_int=\count344
+\l__siunitx_unit_tmp_int=\count338
+\l__siunitx_unit_position_int=\count339
+\l__siunitx_unit_total_int=\count340
 
 (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
 Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
 \col@sep=\dimen286
-\ar@mcellbox=\box70
+\ar@mcellbox=\box68
 \extrarowheight=\dimen287
 \NC@list=\toks41
 \extratabsurround=\skip59
 \backup@length=\skip60
-\ar@cellbox=\box71
+\ar@cellbox=\box69
 )))
 (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifluatex.sty
 Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
 )
 (/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.sty
 (/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.tex
-\xs_counta=\count345
-\xs_countb=\count346
+\xs_counta=\count341
+\xs_countb=\count342
 )
 Package: xstring 2023/08/22 v1.86 String manipulations (CT)
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pst-math/pst-math.tex)
 File: pst-math.tex 2022/11/21 v1.94 `PST-math' (hv)
-\c@Rand@No=\count347
-\c@Random@Left=\count348
-\c@Random@Right=\count349
-\c@Random@No@max=\count350
+\c@Rand@No=\count343
+\c@Random@Left=\count344
+\c@Random@Right=\count345
+\c@Random@No@max=\count346
 )
 Package: pstricks-add 2021/09/10 v. 0.17 package wrapper for pstricks-add.tex (
 hv)
@@ -606,6 +611,13 @@ LaTeX Font Info:    ... okay on input line 38.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
 LaTeX Font Info:    ... okay on input line 38.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 38.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 3
+8.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 38.
 LaTeX Font Info:    ... okay on input line 38.
 LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
 LaTeX Font Info:    ... okay on input line 38.
@@ -619,12 +631,12 @@ nslations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
 or `english'. on input line 38.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 49.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 47.
 
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 49.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 47.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -638,12 +650,12 @@ L3 programming layer <2024-01-22>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 18119 strings out of 474223
- 377402 string characters out of 5748758
- 1930972 words of memory out of 5000000
- 40105 multiletter control sequences out of 15000+600000
- 565019 words of font info for 64 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 118i,8n,122p,664b,532s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 18223 strings out of 474878
+ 380053 string characters out of 5762515
+ 1925627 words of memory out of 5000000
+ 39984 multiletter control sequences out of 15000+600000
+ 564445 words of font info for 66 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 118i,8n,122p,664b,510s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on test1.dvi (1 page, 7624 bytes).
+Output written on test1.pdf (1 page).
